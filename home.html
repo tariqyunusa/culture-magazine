@@ -7,38 +7,44 @@
     <title>Culture</title>
     <link rel="stylesheet" href="/style.css">
     <script src="https://use.fontawesome.com/4ccb416fab.js"></script>
+    
 </head>
 <body>
     <div class="container">
-        <nav>
+        <header> 
             <div class="logo">
-                <h3>Culture.</h3>
+                <h3>Culture.</h3>    
             </div>
-            <ul>
-                <li><a href="">New</a></li>
-                <li><a href="">About Us</a></li>
-                <li><a href="">Blog</a></li>
-                <li><a href="">Contact</a></li>
-            </ul>
-        </nav>
+            <button class="mobile-nav-toggle"  aria-controls="primary-navigation" aria-expanded="false"><span ></span> </button>
+            <nav>
+                <ul id="primary-navigation" data-visible="false" class="primary-navigation flex">
+                    <li class="active"><a href="" >New</a></li>
+                    <li><a href="" >About Us</a></li>
+                    <li><a href="" >Blog</a></li>
+                    <li><a href="" >Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+       
         <div class="hero">
-             <main>
-            <header><h3>culture</h3></header> <div class="social-icons">
-            <i class="fa fa-twitter" aria-hidden="true"></i>
-            <i class="fa fa-instagram" aria-hidden="true"></i>
-        </div>
-        </main>
+            <main>
+             <h3>culture</h3>
+             <div class="social-icons">
+                <a href="" class="twitter"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                <a href="" class="instagram"><i class="fa fa-instagram" aria-hidden="true"></i></a>  
+                </div>
+             </main>
         <div class="card-parent">
             <div class="card-1">
                 <div class="card"><img src="images/religion.jpg" alt="" ></div>
                 <h4><span>Biggest Misconpetions<br>About Religion</span></h4>
                 <p>Lorem, ipsum dolor sit amet <br>consectetur adipisicing elit. Expeditanostrum <br>poss.</p>
-                <a href="">Read More <span class="arrow-right"> <i class="fa fa-arrow-right" aria-hidden="true"></i></span></a>
+                <a href="" class="a-link">Read More <span class="arrow-right"> <i class="fa fa-arrow-right" aria-hidden="true"></i></span></a>
             </div>
             <div class="card-1">
                 <div class="card"><img src="images/anon.jpg" alt="" ></div>
                 <h4><span>The Nice Guy <br> Paradox</span></h4>
-                <p>Lorem, ipsum dolor sit amet <br>consectetur adipisicing elit. Expeditanostrum <br>poss.</p>
+                <p class="p">Lorem, ipsum dolor sit amet <br>consectetur adipisicing elit. Expeditanostrum <br>poss.</p>
                 <a href="">Read More <span class="arrow-right"> <i class="fa fa-arrow-right" aria-hidden="true"></i></span></a>
 
             </div>
@@ -50,6 +56,7 @@
         </div>
        
     </div>
-    
+   
+    <script src="/script.js" defer></script>
 </body>
 </html>

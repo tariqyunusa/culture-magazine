@@ -1,0 +1,393 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Gloock&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.main{
+    position: relative;
+}
+body{
+    height: 100vh;
+    background-color: #F2F2F2;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: #262421;
+    text-decoration: none;
+    list-style: none;
+    overflow-x: hidden;
+}
+body{
+    overflow-x: hidden;
+}
+.container{
+    width: 100%;
+    height: 100vh;
+    
+}
+
+
+.logo{
+    width: 20%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-transform: uppercase;
+    color: #262421;
+}
+.logo h3{
+    font-size: 2rem;
+    font-family: poppins;
+    color: #262421;
+}
+nav{
+    width: 100%;
+}
+ ul{
+   display: flex;
+   text-decoration: none;
+   float: right;
+ }
+ ul li a{
+
+   display: block;
+   color: #262421;
+   font-size: 20px;
+   padding: 10px 20px;
+   margin: 0 5px;
+   
+   
+    
+}
+li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: #262421;
+    font-family: poppins;
+    font-weight: 600;
+
+}
+.hero{
+    width: 100%;
+    height: 85vh;
+    display: flex;
+    justify-content: space-around;
+   
+}
+main{
+    width: 30%;
+    height: 100%;
+    align-items: baseline;
+    display: flex;
+    padding-top: 13em;
+    flex-direction: column;
+
+}
+
+.card-parent{
+    width: 50%;
+    display: flex;
+    margin-top: 5em;
+    justify-content: end;
+    line-height: 1.5rem;
+}
+.card{
+    width: 100%;
+    object-fit: contain;
+    height: 60%;
+    object-position: 100% 100%;
+   
+
+}
+.card img{
+    width: 100%;
+    height: 100%;
+    padding-right: 3em;
+    
+}
+.card-1{
+    width: 100%;
+}
+.card-1 h4{
+    padding-top: 7%;
+    font-size: 1.3em;
+    font-weight: 800;
+    font-family: gloock;
+
+}
+.card-1 p{
+    margin-top: 2%;
+    font-size: .8rem;
+    font-weight: 600;
+    color: #A6A6A6;
+    margin-bottom: 3%;
+}
+.arrow-right{
+    padding-left: 2%;
+    width: 200px;
+}
+.social-icons{
+    padding-top: 51%;
+    width: 50%;
+}
+.instagram{
+    padding-left: 5%;
+}
+main h3{
+    font-size: 6rem;
+    text-transform: uppercase;
+}
+
+header{
+    display: flex;
+    width: 100%;
+    height: 80px;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 100px;
+}
+.mobile-nav-toggle{
+    display: none;
+}
+
+@media (max-width:35em) {
+    
+    .primary-navigation{
+        position: fixed;
+        gap: 2em;
+        flex-direction: column;
+        padding: min(30vh, 10rem) 2em;
+        inset: 0 0 0 30%;
+        background-color: #A6A6A6;
+        z-index: 1000;
+        transform: translateX(100%);
+        transition: transform 350ms ease-out;
+    }
+    .primary-navigation[data-visible="true"] {
+        transform: translateX(0%);
+    }
+    body{
+        overflow-x: hidden;
+    }
+    .mobile-nav-toggle{
+        position: absolute;
+        background: url('/culture-magazine/images/icons8-menu-24.svg');
+        background-repeat: no-repeat;
+        width: 2rem;
+        border: 0;
+       display: block;
+        
+        aspect-ratio: 1;
+        
+        top: 2rem;
+        right: 2.5rem;
+       
+        z-index: 9999;
+     
+    }
+    header{
+        width: 100%;
+        padding: 0;
+        display: flex;
+        
+    }
+    header .logo{
+        padding-left: 6em;
+        position: relative;
+        top: .8em;
+       
+    }
+    .logo h3{
+        font-size: 1.5rem;
+    }
+    main h3{
+        font-size: 2rem;
+        color: #A6A6A6;
+        padding-top: 2%;
+    }
+    main{
+        position: absolute;
+        background-color: #262421;
+        width: 100%;
+        height: 10vh;
+        padding: 0;
+        display: flex;
+        align-items: center;
+        
+        
+    }
+    .hero{
+        height: 100vh;
+        width: 100%;
+
+    }
+    .container{
+        width: 100%;
+        height: 100vh;
+    }
+    .card-parent{
+        width: 100%;
+        padding: 2em;
+        display: flex;
+        
+        
+        position: absolute;
+        top: 20%;
+        gap: 1em;
+    }
+    .card-1{
+        width: 70%;
+        
+    }
+    .card img {
+        padding: 0;
+        height: 80%;
+    }
+    .card-1 h4{
+        position: relative;
+        top: -2.2em;
+    }
+    .card-1 p{
+        position: relative;
+        top: -8%;
+    }
+    .card-1 .a-link{
+        position: relative;
+        top: -5%;
+    }
+    .card-1 .p{
+        position: relative;
+        top: -15px;
+    }
+    .social-icons{
+        display: none;
+    }
+}
+@media (max-width:60em){
+    .primary-navigation{
+        position: fixed;
+        gap: 2em;
+        flex-direction: column;
+        padding: min(30vh, 10rem) 2em;
+        inset: 0 0 0 30%;
+        background-color: #A6A6A6;
+        z-index: 1000;
+        transform: translateX(100%);
+        transition: transform 350ms ease-out;
+    }
+    .primary-navigation[data-visible="true"] {
+        transform: translateX(0%);
+    }
+    body{
+        overflow-x: hidden;
+    }
+    .mobile-nav-toggle{
+        position: absolute;
+        background: url('/culture-magazine/images/icons8-menu-24.svg');
+        background-repeat: no-repeat;
+        width: 2rem;
+        border: 0;
+       display: block;
+        
+        aspect-ratio: 1;
+        
+        top: 2rem;
+        right: 2.5rem;
+       
+        z-index: 9999;
+     
+    }
+    header{
+        width: 100%;
+        padding: 0;
+        display: flex;
+        
+    }
+    header .logo{
+        padding-left: 6em;
+        position: relative;
+        top: .8em;
+       
+    }
+    .logo h3{
+        font-size: 1.5rem;
+    }
+    main h3{
+        font-size: 2rem;
+        color: #A6A6A6;
+        padding-top: 2%;
+    }
+    main{
+        position: absolute;
+        background-color: #262421;
+        width: 100%;
+        height: 10vh;
+        padding: 0;
+        display: flex;
+        align-items: center;
+        
+        
+    }
+    .hero{
+        height: 100vh;
+        width: 100%;
+
+    }
+    .container{
+        width: 100%;
+        height: 100vh;
+    }
+    .card-parent{
+        width: 100%;
+        padding: 2em;
+        display: flex;
+        
+        
+        position: absolute;
+        top: 20%;
+        gap: 1em;
+    }
+    .card-1{
+        width: 70%;
+        
+    }
+    .card img {
+        padding: 0;
+        height: 80%;
+    }
+    /*.card-1 h4{
+        position: relative;
+        top: -4.2em;
+    }
+    .card-1 p{
+        position: relative;
+        top: -12%;
+    }
+    .card-1 .a{
+        position: relative;
+        top: -5%;
+    }
+    .card-1 .p{
+        position: relative;
+      
+    }*/
+    .social-icons{
+        display: none;
+    }
+    /*.card-1 a{
+        position: relative;
+        top: -80px;
+    }*/
+
+}
+@media (max-width:74em){
+    main h3{
+        font-size: 4rem;
+    }
+    .social-icons{
+        padding-top: 80%;
+    }
+}
